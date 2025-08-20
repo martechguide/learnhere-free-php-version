@@ -1,0 +1,347 @@
+/* Multi-Platform Video Protection System - Non-clickable patches */
+
+.video-protection-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Universal video protection container for all platforms */
+.facebook-protection-container,
+.vimeo-protection-container,
+.dailymotion-protection-container,
+.platform-protection-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Top YouTube logo blocker - transparent with hover visibility */
+.youtube-logo-blocker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  z-index: 999;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.youtube-logo-blocker:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.youtube-logo-blocker::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+  z-index: 52;
+}
+
+.youtube-logo-blocker:hover::before {
+  left: 100%;
+}
+
+/* Bottom-left YouTube text blocker - transparent with hover visibility */
+.youtube-bottom-left-blocker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 80px;
+  background: transparent;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.youtube-bottom-left-blocker:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Bottom-right corner YouTube logo blocker - Reduced by 1cm from previous extension */
+.youtube-bottom-right-blocker {
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  width: 160px;
+  height: 80px;
+  background: transparent;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.youtube-bottom-right-blocker:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Center bottom video ID blocker - permanent black patch */
+.video-id-blocker {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 40px;
+  background: black;
+  z-index: 20;
+  pointer-events: none;
+  border-radius: 4px;
+}
+
+/* Additional strategic overlays */
+.youtube-brand-overlay-1 {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 100px;
+  height: 30px;
+  background: transparent;
+  z-index: 999;
+  pointer-events: auto;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.youtube-brand-overlay-1:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.youtube-brand-overlay-2 {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  width: 140px;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 15;
+  pointer-events: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Removed small patch for cleaner right corner */
+
+/* Additional right corner coverage patches - Removed bottom patch for settings access */
+.youtube-right-corner-patch-2 {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 60px;
+  height: 40px;
+  background: transparent;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.youtube-right-corner-patch-2:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Security indicators */
+.security-indicator {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  z-index: 30;
+  pointer-events: none;
+}
+
+/* Facebook Video Protection System */
+.facebook-logo-blocker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  z-index: 999;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.facebook-logo-blocker:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.facebook-bottom-left-blocker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 80px;
+  background: transparent;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.facebook-bottom-left-blocker:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.facebook-bottom-right-blocker {
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  width: 160px;
+  height: 80px;
+  background: transparent;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.facebook-bottom-right-blocker:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Universal Platform Video Protection System */
+.platform-logo-blocker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  z-index: 999;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.platform-logo-blocker:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.platform-bottom-left-blocker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 80px;
+  background: transparent;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.platform-bottom-left-blocker:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.platform-bottom-right-blocker {
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  width: 160px;
+  height: 80px;
+  background: transparent;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.platform-bottom-right-blocker:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Universal video ID blocker for all platforms */
+.platform-video-id-blocker {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 40px;
+  background: black;
+  z-index: 20;
+  pointer-events: none;
+  border-radius: 4px;
+}
+
+/* Disable text selection and context menu */
+.video-protection-container *,
+.facebook-protection-container *,
+.platform-protection-container * {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .youtube-logo-blocker {
+    height: 50px;
+  }
+  
+  .youtube-bottom-left-blocker {
+    width: 150px;
+    height: 60px;
+  }
+  
+  .youtube-bottom-right-blocker {
+    right: -30px;
+    width: 130px;
+    height: 60px;
+  }
+  
+  .youtube-right-corner-patch-2 {
+    width: 50px;
+    height: 35px;
+  }
+  
+  .video-id-blocker {
+    width: 120px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .youtube-logo-blocker {
+    height: 40px;
+  }
+  
+  .youtube-bottom-left-blocker {
+    width: 120px;
+    height: 50px;
+  }
+  
+  .youtube-bottom-right-blocker {
+    right: -20px;
+    width: 105px;
+    height: 50px;
+  }
+  
+  .youtube-right-corner-patch-2 {
+    width: 40px;
+    height: 30px;
+  }
+  
+  .video-id-blocker {
+    width: 100px;
+    height: 28px;
+  }
+}
